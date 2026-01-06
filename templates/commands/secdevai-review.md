@@ -23,6 +23,18 @@ When invoked, this command:
 ## Expected Response
 See `/secdevai` command documentation. This alias executes `/secdevai review` with the same behavior.
 
+## Verification Requirements
+
+**CRITICAL - Line Number Verification**: Before presenting any findings:
+1. After analyzing git diff/commits, read the actual modified files
+2. Verify all line numbers in findings match the actual file content
+3. Ensure Location fields match code reference line numbers exactly
+4. Cross-check each finding against actual file content
+
+**Format Consistency**:
+- Location: `file:line_start-line_end` must match code block `startLine:endLine:filepath`
+- Read actual files to confirm line numbers, don't rely only on diff context
+
 **Important**: After presenting findings, always save results to Markdown and SARIF formats:
 - Use `secdevai_cli.results_exporter.export_results()` to save results
 - Prompt user to confirm result directory (default: `secdevai-results`)
