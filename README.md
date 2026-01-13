@@ -4,6 +4,8 @@ Stop shipping security vulnerabilities. Start shipping secure code. Get instant 
 
 SecDevAI provides context-aware security analysis for Cursor, Claude Code, and Gemini CLI using simple slash commands.
 
+> [!WARNING]
+> **SecDevAI is currently in active development**. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is more than welcome!
 
 ## Quick Start in 1 Minute
 
@@ -26,9 +28,6 @@ That's it! Try using the available commands.
 
 SecDevAI is an AI-powered secure development assistant that helps developers and security researchers build secure code. It provides security analysis with optional integration to existing security tools, supporting both targeted file/selection reviews and full codebase scans. The tool includes configurable rules covering OWASP Top 10 and common code patterns, making it valuable for both development teams and security researchers analyzing codebases and identifying vulnerabilities.
 
-**Disclaimer**
- 
- SecDevAI is currently in **active development** with various LLM models. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is welcome!
 
 ## Why SecDevAI?
 
