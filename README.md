@@ -4,8 +4,8 @@ Stop shipping security vulnerabilities. Start shipping secure code. Get instant 
 
 SecDevAI provides context-aware security analysis for Cursor, Claude Code, and Gemini CLI using simple slash commands.
 
-[!WARNING]
- **SecDevAI is currently in active development** with various LLM models. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is welcome!
+> [!WARNING]
+> **SecDevAI is currently in active development**. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is more than welcome!
 
 ## Quick Start in 1 Minute
 
