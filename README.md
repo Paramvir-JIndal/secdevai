@@ -1,11 +1,13 @@
 # SecDevAI - Secure Development Assistant Tool
 
-AI-powered secure development assistant tool with slash command integration for Cursor, Claude Code, and Gemini CLI.
+Stop shipping security vulnerabilities. Start shipping secure code. Get instant security reviews and fixes right in your preferred AI coding assistant.
+
+SecDevAI provides context-aware security analysis for Cursor, Claude Code, and Gemini CLI using simple slash commands.
 
 
 ## Quick Start in 1 Minute
 
-No friction at all to add SecDevAI into your project!
+Three commands. Zero configuration. Start reviewing code for security issues immediately.
 
 ```bash
 uv tool install git+https://github.com/RedHatProductSecurity/secdevai.git
