@@ -4,6 +4,14 @@ Get SecDevAI up and running in your project in just a few steps.
 
 ## Installation
 
+**Option 1: Direct installation from Git (simplest)**
+
+```bash
+uv tool install git+https://github.com/RedHatProductSecurity/secdevai.git
+```
+
+**Option 2: Install from local clone**
+
 ```bash
 # Clone the repository first
 git clone git@github.com:RedHatProductSecurity/secdevai.git
