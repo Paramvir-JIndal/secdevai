@@ -2,13 +2,31 @@
 
 AI-powered secure development assistant tool with slash command integration for Cursor, Claude Code, and Gemini CLI.
 
-**Disclaimer**
- 
- SecDevAI is currently in **active development** with various LLM models. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is welcome!
+
+## Quick Start in 1 Minute
+
+No friction at all to add SecDevAI into your project!
+
+```bash
+uv tool install git+https://github.com/RedHatProductSecurity/secdevai.git
+cd your-code-project
+secdevai .
+```
+
+Run your preferred AI tool (e.g., Claude Code, Cursor, Gemini-CLI) and type `/secdevai`.
+
+![SecDevAI image](secdevai.png)
+
+That's it! Try using the available commands.
+
 
 ## Overview
 
 SecDevAI is an AI-powered secure development assistant that helps developers and security researchers build secure code. It provides security analysis with optional integration to existing security tools, supporting both targeted file/selection reviews and full codebase scans. The tool includes configurable rules covering OWASP Top 10 and common code patterns, making it valuable for both development teams and security researchers analyzing codebases and identifying vulnerabilities.
+
+**Disclaimer**
+ 
+ SecDevAI is currently in **active development** with various LLM models. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is welcome!
 
 ## Why SecDevAI?
 
@@ -30,9 +48,6 @@ This approach allows you to continuously improve the quality of security review 
 - **Remediation**: Provides code fixes with preview and approval workflow
 - **Security Research**: Helpful for security researchers analyzing codebases and identifying vulnerabilities
 
-## Quick Start
-
-Get up and running with SecDevAI in minutes. See the [Quick Start Guide](docs/QUICKSTART.md) for step-by-step instructions on installation, initialization, and your first security review.
 
 ## Project Structure
 
