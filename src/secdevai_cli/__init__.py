@@ -166,6 +166,7 @@ class TemplateDeployer:
             # Context files
             "context/security-review.context": ".secdevai/context/security-review.context",
             "context/security-rules.md": ".secdevai/context/security-rules.md",
+            "context/wstg-testing.context": ".secdevai/context/wstg-testing.context",
             # Scripts
             "scripts/security-review.sh": ".secdevai/scripts/security-review.sh",
             # Commands (will be deployed to platform-specific dirs)

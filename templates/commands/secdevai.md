@@ -51,9 +51,13 @@ When user runs `/secdevai`, you should:
 
 2. **Review Command** (ONLY if `review` is explicitly specified):
    - **Load Security Context**:
-     ```
-     Read `.secdevai/context/security-review.context` for analysis guidelines
-     ```
+     - Always read: `.secdevai/context/security-review.context` for OWASP Top 10 patterns
+     
+    - **Auto-detect WSTG context** (additionally read `.secdevai/context/wstg-testing.context` if ANY condition applies):
+      - Source code is for a web application, web service, or web site
+      - User explicitly mentions: "WSTG", "Web Security Testing Guide", or category numbers (4.1-4.12)
+     
+     - **Note**: WSTG patterns enhance web application security analysis with 12 comprehensive testing categories
    
    - **Detect Scope** (in priority order):
      - If `review last-commit --number N` specified: Review last N commits (requires git)
@@ -210,10 +214,21 @@ Follow these principles from the security context:
 - Least Privilege
 - Secure by Design, Default, Deployment
 
+## Security Context Sources
+
+This command uses multiple security context files:
+- `.secdevai/context/security-review.context` - OWASP Top 10 patterns (always loaded)
+- `.secdevai/context/wstg-testing.context` - OWASP WSTG v4.2 web app testing patterns (auto-loaded for web code)
+- `.secdevai/context/security-rules.md` - Extended pattern catalog (manual reference)
+
+**WSTG Auto-Detection**: The WSTG context automatically loads when reviewing web application, web service, or web site code, or when explicitly requested by mentioning "WSTG" or category numbers (4.1-4.12).
+
+**Multi-Language Support**: While context files contain primarily Python examples, you MUST adapt security patterns to the language being reviewed (JavaScript, Java, Go, Ruby, PHP, C#, Rust, etc.). Translate the security principles and provide language-specific remediation with appropriate frameworks and idioms.
+
 ## Integration
 
 This command integrates with:
-- `.secdevai/context/security-review.context` for analysis guidelines
+- `.secdevai/context/` directory for security analysis guidelines
 - `.secdevai/scripts/security-review.sh` for optional tool integration
 - `.secdevaiignore` for excluding files from scans
 - External tools: Bandit, Scorecard
