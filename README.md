@@ -1,15 +1,15 @@
 # SecDevAI - Secure Development Assistant Tool
 
-Stop shipping security vulnerabilities. Start shipping secure code. Get instant security reviews and fixes right in your preferred AI coding assistant.
+Stop shipping security vulnerabilities. Start Secure Development right now with instant security reviews and fix suggestions right in your preferred AI coding assistant!
 
-SecDevAI provides context-aware security analysis for Cursor, Claude Code, and Gemini CLI using simple slash commands.
+SecDevAI provides context-aware security analysis and powerful features for Cursor, Claude Code, and Gemini CLI through simple slash commands.
 
 > [!WARNING]
 > **SecDevAI is currently in active development**. Features, interfaces and behavior may change without notice. Use at your own risk and please report any issues you encounter. Contribution is more than welcome!
 
 ## Quick Start in 1 Minute
 
-Three commands. Zero configuration. Start reviewing code for security issues immediately.
+Install SecDevAI to your project. ([`uv`](https://github.com/astral-sh/uv) is required)
 
 ```bash
 uv tool install git+https://github.com/RedHatProductSecurity/secdevai.git
@@ -26,28 +26,26 @@ That's it! Try using the available commands.
 
 ## Overview
 
-SecDevAI is an AI-powered secure development assistant that helps developers and security researchers build secure code. It provides security analysis with optional integration to existing security tools, supporting both targeted file/selection reviews and full codebase scans. The tool includes configurable rules covering OWASP Top 10 and common code patterns, making it valuable for both development teams and security researchers analyzing codebases and identifying vulnerabilities.
+SecDevAI is an AI-powered secure development assistant that helps developers and security researchers build secure code. It provides security analysis with optional integration to existing security tools, supporting both targeted file/selection reviews and full codebase scans. The tool includes extensible rules covering OWASP Top 10 and common code patterns, making it valuable for both development teams and security researchers analyzing codebases and identifying vulnerabilities.
 
 
 ## Why SecDevAI?
 
-While Cursor, Claude Code, and Gemini CLI offer built-in AI code review capabilities, SecDevAI adds **transparency and control** over the security review contexts. This enables you to:
+While you can ask standard Cursor, Claude Code, or Gemini CLI for code review, SecDevAI provides **transparency and control** over the security review contexts. This allows you to:
 
-- **Transparency**: See exactly what security patterns and rules are being applied to your code
-- **Control**: Customize and extend security contexts to match your organization's specific needs
-- **Continuous Improvement**: Update and refine security review templates based on your team's experience and evolving threats
+- **Transparency**: See exactly which security patterns and rules are applied to your code.
+- **Control**: Customize and extend security contexts to fit your organization's specific needs.
+- **Continuous Improvement**: Update and refine security review templates based on your team's experience and evolving threats.
 
-This approach allows you to continuously improve the quality of security review results, rather than relying on opaque, fixed AI models that you cannot modify or enhance.
+This approach enables you to continually improve the quality of security review results, rather than relying on opaque, fixed AI models that cannot be modified or enhanced.
 
 ## Features
 
-- **Slash Commands**: `/secdevai` works across Cursor, Claude Code, and Gemini CLI
-- **Multi-Platform**: Commands work identically across different AI assistant platforms
-- **Tool Integration**: Optional integration with Bandit and Scorecard (expandable)
-- **Python-First**: Initial focus on Python security patterns, expandable to other languages
-- **OWASP Top 10**: Comprehensive coverage of OWASP Top 10 security risks
-- **Remediation**: Provides code fixes with preview and approval workflow
-- **Security Research**: Helpful for security researchers analyzing codebases and identifying vulnerabilities
+- **Multi-Platform**: Works across Cursor, Claude Code, and Gemini CLI
+- **Security Review**: Analyze codebases for vulnerabilities with OWASP Top 10 coverage
+- **Tool Integration**: Optional integration with Bandit, Scorecard, and more
+- **Extensibility**: Customizable security rules and patterns for any language
+- **Remediation**: AI-powered code fix suggestions with approval workflow
 
 
 ## Project Structure
@@ -63,16 +61,14 @@ secdevai/
 ```
 
 ## Next Steps
-- Follow the [Quick Start Guide](docs/QUICKSTART.md) to get started
-- Read [Usage Guide](docs/usage.md) for detailed usage and advanced features
-- Check [Installation Guide](docs/installation.md) for more installation options
+- Read [Usage Guide](docs/USAGE.md) to get started and explore all features
 - Read [Contributing Guide](CONTRIBUTING.md) to customize rules and contribute
 
 ## Troubleshooting
 
 ### Command not found
 - Make sure SecDevAI is installed: `secdevai --help`
-- If using uv, ensure `~/.local/bin` is in your PATH
+- For `uv`, ensure `~/.local/bin` is in your PATH
 
 ### Templates not found
 - Ensure you're running `secdevai` from the project root
