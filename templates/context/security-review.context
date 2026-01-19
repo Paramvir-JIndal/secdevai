@@ -10,6 +10,10 @@ Follow these fundamental security principles:
 2. **Defense in Depth**: Use multiple, layered security controls
 3. **Least Privilege**: Grant only minimum permissions necessary
 4. **Secure by Design, Default, Deployment**: Ship with secure defaults, deny by default
+5. **Access Control**: Implement fine-grained access controls to check what actions each user or process is authorized to perform
+6. **Secure data in transit and at rest**: All external communication must be encrypted, sensitive data must be stored using strong encryption mechanisms
+7. **Least Common Mechanism**: Use isolation of components and avoid single point of failure
+8. **Monitoring and Updating**: All Sensitive admin actions must be logged, upgrade mechanisms should be available with zero downtime
 
 ---
 
